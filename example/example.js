@@ -43,6 +43,7 @@ class Example extends React.Component {
     const select1Props = {
       label: "Favorite Color",
       className: 'my-example-select-box',
+      optionsWrapperClassName: 'my-example-select-box-option',
       onChange: this.handleChange,
       value: this.state.color
     };

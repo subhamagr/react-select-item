@@ -397,6 +397,9 @@ export default class SelectItem extends React.Component {
 
   renderOptionMenu = () => {
     let className = 'react-select-item-options';
+    if (this.props.optionsWrapperClassName) {
+      className += ' ' + this.props.optionsWrapperClassName
+    }
     let selectOptions = this.options();
     if (!this.state.open) {
       className += ' react-select-item-hidden'
